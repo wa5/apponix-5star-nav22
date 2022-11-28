@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .box {
+            font-size: 40px;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media (max-width:300px) {
+            #item-1 {
+                display: block;
+            }
+        }
+
+        @media (min-width:301px) and (max-width:600px) {
+            #item-2 {
+                display: block;
+                background-color: aquamarine;
+            }
+        }
+
+        @media (min-width:601px)and (max-width:900px) {
+            #item-3 {
+                display: block;
+                background-color: rgb(244, 255, 127);
+            }
+        }
+
+        @media (min-width:901px) {
+            #item-4 {
+                display: block;
+                background-color: rgb(21, 27, 211);
+            }
+        }
+    </style>
+    <div class="box" id="item-1">small screen 0 px 300px</div>
+    <div class="box" id="item-2">tab 301 to 600px</div>
+    <div class="box" id="item-3">desktop 601 to 900px</div>
+    <div class="box" id="item-4">large screen 9001 no </div>
+
+
+
+</body>
+
+</html>
